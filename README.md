@@ -11,17 +11,17 @@ jFullPageScroller is a full-featured full page scroller plugin for jQuery. This 
 - More features to be implemented and improved to provide you with better functionality.
 
 ## License
-This software is distributed under the [MIT](https://opensource.org/licenses/MIT) license. Please read [LICENSE](https://github.com/kevinkarl22/jFullPageScroller/LICENSE) for information on the software availability and distribution.
+This software is distributed under the [MIT](https://opensource.org/licenses/MIT) license. Please read [LICENSE](https://github.com/kevinkarl22/jFullPageScroller/blob/main/LICENSE) for information on the software availability and distribution.
 
 ## Installation
-You can [download jFullPageScroller as a zip file](https://github.com/kevinkarl22/jFullPageScroller/), then copy the contents of the jFullPageScroller folder into your web application's folder:
+You can [download jFullPageScroller as a zip file](https://github.com/kevinkarl22/jFullPageScroller/archive/main.zip), then copy the contents of the jFullPageScroller folder into your web application's folder:
 
-In your <head> tag, add the following:
+In your `<head>` tag, add the following:
 ```html
 <link href="/dist/jFullPageScroller.min.css" rel="stylesheet">
 ```
 
-In your <body> tag, add the following:
+In your `<body>` tag, add the following:
 ```html
 <script src="/dist/jFullPageScroller.min.js"></script>
 ```
@@ -30,11 +30,11 @@ Note: You need to change the `dist` folder path depending on where you have plac
 
 ## Usage
 
-You must add the attribute `jfps-section` in a div or section tag or whatever html container tag you preferred, then also add `jfps-section-id=1` attribute on the same tag where you added the `jfps-section`. This will be it's identifier.
+You must add the `jfps-section` attribute in a div or section tag or whatever html container tag you preferred, then also add `jfps-section-id=1` attribute on the same tag where you added the `jfps-section` attribute. This will be it's identifier.
 
-You can add as many as section as you want as long as you change the value of the `jfps-section-id`. You can set any value of the `jfps-section-id`, a number or a name, as long as it has the same value in the navigation menu, if navigation menu is enabled.
+You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a name, as long as it has the same value in the navigation menu, if navigation menu is enabled.
 
-Don't forget to add `jfps-section-direction` to the parent container of the `jfps-section` containers. You have two options: `vertical` or `horizontal`. Change this value if you want a vertical or horizontal scrolling animation.
+Don't forget to add `jfps-section-direction` attribute to the parent container of the `jfps-section` attribute containers. You have two options: `vertical` or `horizontal`. Change this value if you want a vertical or horizontal scrolling animation.
 
 For example:
 ```html
@@ -128,7 +128,7 @@ $.jFullPageScroller({
 
 The code above will activate the jFullPageScroller without a navigation menu needed.
 
-Now, if you need a navigation menu, you must create a html navigation menu then add the following attributes on each navigation, `jfps-nav` and `jfps-target-section=1`. The value of `jfps-target-section` must be the same with the `jfps-section-id`. Also, your navigation menu must have the same count as the number of your section.
+Now, if you need a navigation menu, you must create a html navigation menu then add the following attributes on each navigation, `jfps-nav` and `jfps-target-section=1` attributes. The value of `jfps-target-section` attribute must be the same with the `jfps-section-id` attribute. Also, your navigation menu must have the same count as the number of your section.
 
 For example:
 ```html
