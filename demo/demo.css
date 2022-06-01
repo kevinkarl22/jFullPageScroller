@@ -1,0 +1,45 @@
+html,
+body {
+  font-family: 'Arial';
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+#demo-header {
+  padding: 1rem;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#demo-header a {
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+#demo-header a.active {
+  text-decoration: underline;
+}
+
+#demo-header a:hover {
+  text-decoration: underline;
+}
+
+#demo-content {
+  height: 100%;
+  width: 100%;
+}
+
+#demo-content section {
+  font-size: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
