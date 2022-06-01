@@ -174,9 +174,9 @@ $.jFullPageScroller({
 
 `enableKeyPressScroll` - Allow the use of keyboard to navigate each section. `Default: true`
 
-`withNavigation` - Enable or disable the navigation menu.
+`withNavigation` - Enable or disable the navigation menu. `Default: true`
 
-`callbackActions` - Optionally assign a callback script on each section.
+`callbackActions` - Optionally assign a callback script on each section. `Default: No Callback Scripts`
 
 You can try the demo [demo](https://github.com/kevinkarl22/jFullPageScroller/tree/main/demo) folder, which contains all the functionality of the plugin.
 
