@@ -176,7 +176,7 @@ $.jFullPageScroller({
 
 `withNavigation` - Enable or disable the navigation menu.
 
-`callbackActions` - Optionally assigned a callback script on each section.
+`callbackActions` - Optionally assign a callback script on each section.
 
 You can try the demo [demo](https://github.com/kevinkarl22/jFullPageScroller/tree/main/demo) folder, which contains all the functionality of the plugin.
 
