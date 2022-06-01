@@ -169,12 +169,16 @@ $.jFullPageScroller({
 
 ## Options
 `animationDelay` - How long before the animation will start in milliseconds. `Default: 0`
+
 `animationSpeed` - How long the animation will last. `Default: 1000`
+
 `enableKeyPressScroll` - Allow the use of keyboard to navigate each section. `Default: true`
+
 `withNavigation` - Enable or disable the navigation menu.
+
 `callbackActions` - Optionally assigned a callback script on each section.
 
-You can try the demo [demo](https://github.com/kevinkarl22/jFullPageScroller/tree/maindemo) folder, which contains all the functionality of the plugin.
+You can try the demo [demo](https://github.com/kevinkarl22/jFullPageScroller/tree/main/demo) folder, which contains all the functionality of the plugin.
 
 ## Contributing
 Please submit bug reports, vulnerabilities, suggestions and send it to <a href="mailto:kevinkarl.leano@gmail.com">kevinkarl.leano@gmail.com</a>.
