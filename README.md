@@ -170,7 +170,7 @@ $.jFullPageScroller({
 ## Options
 `animationDelay` - How long before the animation will start in milliseconds. `Default: 0`
 
-`animationSpeed` - How long the animation will last. `Default: 1000`
+`animationSpeed` - How long the animation will last in milliseconds. `Default: 1000`
 
 `enableKeyPressScroll` - Allow the use of keyboard to navigate each section. `Default: true`
 
