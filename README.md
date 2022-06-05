@@ -89,7 +89,7 @@ For example:
 
 Inside the parent container you created, create a div/section containers. For each div/section containers you created, add the `jfps-section` and `jfps-section-id` attributes.
 
-You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a string name. If navigation menu is enabled, then it should the same value in the navigation menu mentioned above.
+You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a string name. If navigation menu is enabled, then it should have the same value in the navigation menu mentioned above.
 
 For example:
 ```html
