@@ -91,31 +91,33 @@ Inside the parent container you created, create a div/section containers. For ea
 
 You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a string name. If navigation menu is enabled, then it should have the same value in the navigation menu mentioned above.
 
+For better user experience, you can add a `id` attribute which would have the same value as the `jfps-target-section`. This is to ensure that each page can still be navigated even if the plugin did not initialized.
+
 For example:
 ```html
 <main jfps-section-container id="demo-content">
-  <section jfps-section jfps-section-id="section-1" style="background-color: cyan;">
+  <section jfps-section jfps-section-id="section-1" style="background-color: cyan;" id="section-1">
     <div>
       <h1>jFullPageScroller</h1>
       <p>By Kevin Karl Leaño</p>
     </div>
   </section>
-  <section jfps-section jfps-section-id="section-2" style="background-color: lightgreen;">
+  <section jfps-section jfps-section-id="section-2" style="background-color: lightgreen;" id="section-2">
     <div>
       <h1>Section #2</h1>
     </div>
   </section>
-  <section jfps-section jfps-section-id="section-3" style="background-color: orange;">
+  <section jfps-section jfps-section-id="section-3" style="background-color: orange;" id="section-3">
     <div>
       <h1>Section #3</h1>
     </div>
   </section>
-  <section jfps-section jfps-section-id="section-4" style="background-color: maroon;">
+  <section jfps-section jfps-section-id="section-4" style="background-color: maroon;" id="section-4">
     <div>
       <h1>Section #4</h1>
     </div>
   </section>
-  <section jfps-section jfps-section-id="section-5" style="background-color: gray;">
+  <section jfps-section jfps-section-id="section-5" style="background-color: gray;" id="section-5">
     <div>
       <h1>Section #5</h1>
     </div>
