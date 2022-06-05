@@ -61,7 +61,7 @@ For example:
 
 Optionally, you can specify a navigation menu, this will be useful when users want to jump in different parts of the section.
 
-Just create a html navigation menu inside the `body` tag then add the following attributes on each navigation links: `jfps-nav` and `jfps-target-section` attributes. Assign a value for each `jfps-target-section` attributes, a number of a string name.
+Just create a html navigation menu inside the `<body>` tag then add the following attributes on each navigation links: `jfps-nav` and `jfps-target-section` attributes. Assign a value for each `jfps-target-section` attributes, a number of a string name.
 
 For better user experience, you can add a `href` attribute which would have the same value as the `jfps-target-section`. This is to ensure that each page can still be navigated even if the plugin did not initialized.
 
