@@ -76,7 +76,7 @@ For example:
 </nav>
 ```
 
-`Note: The next part is not optional and must be declared.`
+`Note: The next part is not optional and must be set.`
 
 Inside the `<body>` tag again, create a parent div/section tag or any html container tag you preferred. You must add a `jfps-section-container` attribute in tag.
 
