@@ -3,12 +3,12 @@ body {
   font-family: 'Arial';
   height: 100%;
   margin: 0;
-  overflow: hidden;
   padding: 0;
   width: 100%;
 }
 
 #demo-header {
+  box-sizing: border-box;
   padding: 1rem;
   position: fixed;
   text-align: center;
@@ -20,8 +20,9 @@ body {
 #demo-header a {
   color: #333;
   cursor: pointer;
+  display: inline-block;
   font-size: 1rem;
-  margin: 0 1rem;
+  margin: 0.5rem;
   text-decoration: none;
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 #demo-content section {
-  font-size: 3rem;
+  font-size: 6vw;
   padding: 3rem;
   text-align: center;
 }

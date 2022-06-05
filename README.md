@@ -30,105 +30,40 @@ Note: You need to change the `dist` folder path depending on where you have plac
 
 ## Usage
 
-You must add the `jfps-section` attribute in a div or section tag or whatever html container tag you preferred, then also add `jfps-section-id=1` attribute on the same tag where you added the `jfps-section` attribute. This will be it's identifier.
+`Note: If there are any misconfiguration in deploying the plugin, the plugin will not work and logs will be displayed on the browser's console.`.
 
-You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a name, as long as it has the same value in the navigation menu, if navigation menu is enabled.
+You must add the `jfps` attribute in the `<html>` tag. In this tag you can also add the following optional attributes which would affect the behavior of the plugin:
 
-Don't forget to add `jfps-section-direction` attribute to the parent container of the `jfps-section` attribute containers. You have two options: `vertical` or `horizontal`. Change this value if you want a vertical or horizontal scrolling animation.
+`jfps-direction` - The direction of the scrollbar. `Options: "vertical" or "horizontal"`
+
+`jfps-scrollbar` - Availability of the browser's scrollbar. `Options: "false" or "true"`
+
+If you did not specify any of the above-mentioned optional attributes, then the following default attributes will be used instead:
+
+`jfps-direction="vertical"` and `jfps-scrollbar="false"`
 
 For example:
 ```html
-<!-- Vertical Scrolling -->
-<main jfps-section-direction="vertical" id="demo-content">
-  <section jfps-section jfps-section-id="section-1" style="background-color: cyan;">
-    <div>
-      <h1>jFullPageScroller</h1>
-      <p>By Kevin Karl Leaño</p>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-2" style="background-color: lightgreen;">
-    <div>
-      <h1>Section #2</h1>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-3" style="background-color: orange;">
-    <div>
-      <h1>Section #3</h1>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-4" style="background-color: maroon;">
-    <div>
-      <h1>Section #4</h1>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-5" style="background-color: gray;">
-    <div>
-      <h1>Section #5</h1>
-    </div>
-  </section>
-</main>
+<!-- With Optional Attributes -->
+<!DOCTYPE html>
+<html jfps jfps-direction="horizontal" jfps-scrollbar="true" lang="en">
 
+<head>
 
-<!-- Horizontal Scrolling -->
-<main jfps-section-direction="horizontal" id="demo-content">
-  <section jfps-section jfps-section-id="section-1" style="background-color: cyan;">
-    <div>
-      <h1>jFullPageScroller</h1>
-      <p>By Kevin Karl Leaño</p>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-2" style="background-color: lightgreen;">
-    <div>
-      <h1>Section #2</h1>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-3" style="background-color: orange;">
-    <div>
-      <h1>Section #3</h1>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-4" style="background-color: maroon;">
-    <div>
-      <h1>Section #4</h1>
-    </div>
-  </section>
-  <section jfps-section jfps-section-id="section-5" style="background-color: gray;">
-    <div>
-      <h1>Section #5</h1>
-    </div>
-  </section>
-</main>
+<!-- Without Optional Attributes -->
+<!DOCTYPE html>
+<html jfps lang="en">
+
+<head>
 ```
 
-Then to initialize, add the following script:
+`Note: The next part is optional and only applicable if navigation menu is needed.`
 
-```javascript
-// Default settings.
-$.jFullPageScroller({
-  animationDelay: 0,
-  animationSpeed: 1000,
-  enableKeyPressScroll: true,
-  withNavigation: false,
-});
-```
+Optionally, you can specify a navigation menu, this will be useful when users want to jump in different parts of the section.
 
-```javascript
-// Default settings with callback actions.
-$.jFullPageScroller({
-  animationDelay: 0,
-  animationSpeed: 1000,
-  enableKeyPressScroll: true,
-  withNavigation: false,
-}, function() {
-  // Section #1 Callback
-}, function() {
-  // Section #2 Callback
-});
-```
+Just create a html navigation menu inside the `body` tag then add the following attributes on each navigation links: `jfps-nav` and `jfps-target-section` attributes. Assign a value for each `jfps-target-section` attributes, a number of a string name.
 
-The code above will activate the jFullPageScroller without a navigation menu needed.
-
-Now, if you need a navigation menu, you must create a html navigation menu then add the following attributes on each navigation, `jfps-nav` and `jfps-target-section=1` attributes. The value of `jfps-target-section` attribute must be the same with the `jfps-section-id` attribute. Also, your navigation menu must have the same count as the number of your section.
+For better user experience, you can add a `href` attribute which would have the same value as the `jfps-target-section`. This is to ensure that each page can still be navigated even if the plugin did not initialized.
 
 For example:
 ```html
@@ -141,7 +76,56 @@ For example:
 </nav>
 ```
 
-Then use this script instead:
+`Note: The next part is not optional and must be declared.`
+
+Inside the `<body>` tag again, create a parent div/section tag or any html container tag you preferred. You must add a `jfps-section-container` attribute in tag.
+
+For example:
+```html
+<main jfps-section-container id="demo-content">
+
+</main>
+```
+
+Inside the parent container you created, create a div/section containers. For each div/section containers you created, add the `jfps-section` and `jfps-section-id` attributes.
+
+You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a name. If navigation menu is enabled, then it should the same value in the navigation menu mentioned above.
+
+For example:
+```html
+<main jfps-section-container id="demo-content">
+  <section jfps-section jfps-section-id="section-1" style="background-color: cyan;">
+    <div>
+      <h1>jFullPageScroller</h1>
+      <p>By Kevin Karl Leaño</p>
+    </div>
+  </section>
+  <section jfps-section jfps-section-id="section-2" style="background-color: lightgreen;">
+    <div>
+      <h1>Section #2</h1>
+    </div>
+  </section>
+  <section jfps-section jfps-section-id="section-3" style="background-color: orange;">
+    <div>
+      <h1>Section #3</h1>
+    </div>
+  </section>
+  <section jfps-section jfps-section-id="section-4" style="background-color: maroon;">
+    <div>
+      <h1>Section #4</h1>
+    </div>
+  </section>
+  <section jfps-section jfps-section-id="section-5" style="background-color: gray;">
+    <div>
+      <h1>Section #5</h1>
+    </div>
+  </section>
+</main>
+```
+
+Now, if everything are set in the `<html>` part. Let's go to the `<script>` part.
+
+To initialize, add the following script in your `<script>` tag:
 
 ```javascript
 // Default settings.
@@ -149,7 +133,7 @@ $.jFullPageScroller({
   animationDelay: 0,
   animationSpeed: 1000,
   enableKeyPressScroll: true,
-  withNavigation: true,
+  withNavigation: true, // If navigation menu is not set, then change this to "false".
 });
 ```
 
@@ -159,13 +143,21 @@ $.jFullPageScroller({
   animationDelay: 0,
   animationSpeed: 1000,
   enableKeyPressScroll: true,
-  withNavigation: true,
+  withNavigation: true, // If navigation menu is not set, then change this to "false".
 }, function() {
   // Section #1 Callback
 }, function() {
   // Section #2 Callback
+}, function() {
+  // Section #3 Callback
+}, function() {
+  // Section #4 Callback
+}, function() {
+  // Section #5 Callback
 });
 ```
+
+If everything are set and configured, then the jFullPageScroller will be initialized.
 
 ## Options
 `animationDelay` - How long before the animation will start in milliseconds. `Default: 0`
@@ -185,3 +177,6 @@ Please submit bug reports, vulnerabilities, suggestions and send it to <a href="
 
 ## Changelog
 See [changelog](https://github.com/kevinkarl22/jFullPageScroller/blob/main/CHANGELOG.md).
+
+## Version
+See [version](https://github.com/kevinkarl22/jFullPageScroller/blob/main/VERSION).
