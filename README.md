@@ -78,7 +78,7 @@ For example:
 
 `Note: The next part is not optional and must be set.`
 
-Inside the `<body>` tag again, create a parent div/section tag or any html container tag you preferred. You must add a `jfps-section-container` attribute in tag.
+Inside the `<body>` tag again, create a parent div/section tag or any html container tag you preferred. You must add a `jfps-section-container` attribute in this tag.
 
 For example:
 ```html
