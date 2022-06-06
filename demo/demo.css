@@ -34,11 +34,6 @@ body {
   text-decoration: underline;
 }
 
-#demo-content {
-  height: 100%;
-  width: 100%;
-}
-
 #demo-content section {
   font-size: 6vw;
   padding: 3rem;
