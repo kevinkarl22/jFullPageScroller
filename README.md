@@ -65,7 +65,7 @@ Just create a html navigation menu inside the `<body>` tag then add the followin
 
 For better user experience, you can add a `href` attribute which would have the same value as the `jfps-target-section`. This is to ensure that each page can still be navigated even if the plugin did not initialized.
 
-You can customize the layout or look of the navigation menu as long as you retain the required attributes.
+`Note: You can customize the layout or look of the navigation menu as long as you retain the required attributes.`
 
 For example:
 ```html
