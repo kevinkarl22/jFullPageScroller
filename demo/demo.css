@@ -3,17 +3,14 @@ body {
   font-family: 'Arial';
 }
 
-#demo-header {
-  box-sizing: border-box;
+#demo-nav {
   padding: 1rem;
-  position: fixed;
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 10;
 }
 
-#demo-header a {
+#demo-nav a {
   color: #333;
   cursor: pointer;
   display: inline-block;
@@ -22,15 +19,15 @@ body {
   text-decoration: none;
 }
 
-#demo-header a.active {
+#demo-nav a.active {
   text-decoration: underline;
 }
 
-#demo-header a:hover {
+#demo-nav a:hover {
   text-decoration: underline;
 }
 
-#demo-content section {
+#demo-content section div {
   font-size: 6vw;
   padding: 3rem;
   text-align: center;

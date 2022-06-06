@@ -61,7 +61,9 @@ For example:
 
 Optionally, you can specify a navigation menu, this will be useful when users want to jump in different parts of the section.
 
-Just create a html navigation menu inside the `<body>` tag then add the following attributes on each navigation links: `jfps-nav` and `jfps-target-section` attributes. Assign a value for each `jfps-target-section` attributes, a number or a string name.
+First, create a html navigation menu parent container inside the `<body>` tag, you can use any html container tag you preferred. You must add a `jfps-nav-container` attribute in this tag.
+
+Then inside the parent container you created, create a child navigation menu link then add the following attributes on each navigation link: `jfps-nav` and `jfps-target-section` attributes. Assign a value for each `jfps-target-section` attributes, a number or a string name.
 
 For better user experience, you can add a `href` attribute which would have the same value as the `jfps-target-section`. This is to ensure that each page can still be navigated even if the plugin did not initialized.
 
@@ -69,7 +71,7 @@ For better user experience, you can add a `href` attribute which would have the 
 
 For example:
 ```html
-<nav>
+<nav jfps-nav-container id="demo-nav">
   <a jfps-nav jfps-target-section="section-1" href="#section-1">Section #1</a>
   <a jfps-nav jfps-target-section="section-2" href="#section-2">Section #2</a>
   <a jfps-nav jfps-target-section="section-3" href="#section-3">Section #3</a>
@@ -80,7 +82,7 @@ For example:
 
 `Note: The next part is not optional and must be set.`
 
-Inside the `<body>` tag again, create a parent div/section tag or any html container tag you preferred. You must add a `jfps-section-container` attribute in this tag.
+Inside the `<body>` tag again, create a parent container, you can use any html container tag you preferred. You must add a `jfps-section-container` attribute in this tag.
 
 For example:
 ```html
@@ -89,7 +91,7 @@ For example:
 </main>
 ```
 
-Inside the parent container you created, create a div/section containers. For each div/section containers you created, add the `jfps-section` and `jfps-section-id` attributes.
+Inside the parent container you created, create a child section container, you can use any html container tag you preferred. For each section container, add the `jfps-section` and `jfps-section-id` attributes.
 
 You can add as many as section as you want as long as you change the value of the `jfps-section-id` attribute. You can set any value of the `jfps-section-id` attribute, a number or a string name. If navigation menu is enabled, then it should have the same value in the navigation menu mentioned above.
 
