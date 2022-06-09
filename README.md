@@ -176,7 +176,9 @@ If everything are set and configured, then the jFullPageScroller will be initial
 
 `callbackActions` - Optionally assign a callback script on each section. `Default: No Callback Scripts`
 
-You can try the demo [demo](https://github.com/kevinkarl22/jFullPageScroller/tree/main/demo) folder, which contains all the functionality of the plugin.
+## Demo
+
+You can try the [demo](https://github.com/kevinkarl22/jFullPageScroller/tree/main/demo) folder, which contains all the functionality of the plugin.
 
 ## Contributing
 Please submit bug reports, vulnerabilities, suggestions and send it to <a href="mailto:kevinkarl.leano@gmail.com">kevinkarl.leano@gmail.com</a>.
