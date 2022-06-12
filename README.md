@@ -1,6 +1,6 @@
 # jFullPageScroller – A full-featured full page scroller plugin for jQuery.
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'S6S06JWZX');kofiwidget2.draw();</script>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S06JWZX)
 
 jFullPageScroller is a full-featured full page scroller plugin for jQuery. This plugin converts sections of an ordinary web page into a full page with scrolling animation.
 
