@@ -1,3 +1,4 @@
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S06JWZX)
 
 # jFullPageScroller – A full-featured full page scroller plugin for jQuery.
