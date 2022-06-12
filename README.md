@@ -150,6 +150,7 @@ Optionally, you can assign a callback script for each section you want.
 To add a callback, create an object using the following the format:
 
 ```javascript
+callbackActions: {
   'TARGET SECTION ID': {
     start: function() {
       // Script to be called when animation starts.
@@ -157,7 +158,8 @@ To add a callback, create an object using the following the format:
     done: function() {
       // Script to be called when animation ends.
     }
-  }
+  },
+}
 ```
 
 `Note: Your 'TARGET SECTION ID' must match the value of the 'jfps-section-id' assigned on each section.`
@@ -173,13 +175,22 @@ $.jFullPageScroller({
   animationSpeed: 1000,
   enableKeyPressScroll: true,
   withNavigation: true, // If navigation menu is not set, then change this to "false".
-}, {
-  'section-5': {
-    start: function() {
-      // Script to be called when animation starts.
+  callbackActions: {
+    'section-3': {
+      start: function() {
+        // Script to be called when animation starts.
+      },
+      done: function() {
+        // Script to be called when animation ends.
+      }
     },
-    done: function() {
-      // Script to be called when animation ends.
+    'section-5': {
+      start: function() {
+        // Script to be called when animation starts.
+      },
+      done: function() {
+        // Script to be called when animation ends.
+      }
     }
   }
 });
@@ -195,6 +206,8 @@ If everything are set and configured, then the jFullPageScroller will be initial
 `enableKeyPressScroll` - Allow the use of keyboard to navigate each section. `Default: true`
 
 `withNavigation` - Enable or disable the navigation menu. `Default: true`
+
+`callbackActions` - Optionally assign a callback script on a section. `Default: No Callback Scripts`
 
 ## Demo
 
