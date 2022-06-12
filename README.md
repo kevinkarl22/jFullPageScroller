@@ -147,7 +147,7 @@ $.jFullPageScroller({
 
 Optionally, you can assign callback scripts for each section you want.
 
-To add callbacks, create an object using the following the format:
+To add a callback, create an object using the following the format:
 
 ```javascript
   'TARGET SECTION ID': {
@@ -160,7 +160,7 @@ To add callbacks, create an object using the following the format:
   }
 ```
 
-`Note: Your 'TARGET SECTION ID' must match the value of the 'jfps-section-id' assigned on each sections.`
+`Note: Your 'TARGET SECTION ID' must match the value of the 'jfps-section-id' assigned on each section.`
 
 If your `TARGET SECTION ID` matches the value of a section's `jfps-section-id`, then it will initialize the callback of that specific section.
 
