@@ -145,7 +145,7 @@ $.jFullPageScroller({
 });
 ```
 
-Optionally, you can assign callback scripts for each section you want.
+Optionally, you can assign a callback script for each section you want.
 
 To add a callback, create an object using the following the format:
 
