@@ -152,10 +152,10 @@ To add a callback, create an object using the following the format:
 ```javascript
   'TARGET SECTION ID': {
     start: function() {
-
+      // Script to be called when animation starts.
     },
-    end: function() {
-
+    done: function() {
+      // Script to be called when animation ends.
     }
   }
 ```
@@ -176,10 +176,10 @@ $.jFullPageScroller({
 }, {
   'section-5': {
     start: function() {
-
+      // Script to be called when animation starts.
     },
     done: function() {
-
+      // Script to be called when animation ends.
     }
   }
 });
