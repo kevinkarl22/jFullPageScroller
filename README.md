@@ -1,5 +1,7 @@
 # jFullPageScroller – A full-featured full page scroller plugin for jQuery.
 
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'S6S06JWZX');kofiwidget2.draw();</script>
+
 jFullPageScroller is a full-featured full page scroller plugin for jQuery. This plugin converts sections of an ordinary web page into a full page with scrolling animation.
 
 ## Features
@@ -143,6 +145,27 @@ $.jFullPageScroller({
 });
 ```
 
+Optionally, you can assign callback scripts for each section you want.
+
+To add callbacks, create an object using the following the format:
+
+```javascript
+  'TARGET SECTION ID': {
+    start: function() {
+
+    },
+    end: function() {
+
+    }
+  }
+```
+
+`Note: Your 'TARGET SECTION ID' must match the value of the 'jfps-section-id' assigned on each sections.`
+
+If your `TARGET SECTION ID` matches the value of a section's `jfps-section-id`, then it will initialize the callback of that specific section.
+
+You can utilize the jQuery's `animate()` options exception for `duration` in your callbacks. Visit [jQuery's Animate](https://api.jquery.com/animate/) for API documentation.
+
 ```javascript
 // Default settings with callback actions.
 $.jFullPageScroller({
@@ -150,16 +173,15 @@ $.jFullPageScroller({
   animationSpeed: 1000,
   enableKeyPressScroll: true,
   withNavigation: true, // If navigation menu is not set, then change this to "false".
-}, function() {
-  // Section #1 Callback
-}, function() {
-  // Section #2 Callback
-}, function() {
-  // Section #3 Callback
-}, function() {
-  // Section #4 Callback
-}, function() {
-  // Section #5 Callback
+}, {
+  'section-5': {
+    start: function() {
+
+    },
+    done: function() {
+
+    }
+  }
 });
 ```
 
@@ -173,8 +195,6 @@ If everything are set and configured, then the jFullPageScroller will be initial
 `enableKeyPressScroll` - Allow the use of keyboard to navigate each section. `Default: true`
 
 `withNavigation` - Enable or disable the navigation menu. `Default: true`
-
-`callbackActions` - Optionally assign a callback script on each section. `Default: No Callback Scripts`
 
 ## Demo
 

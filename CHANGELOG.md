@@ -1,3 +1,7 @@
+1.3 (06-12-2022)
+- Improved the callback functionality.
+- Major fixes and improvements.
+
 1.2 (06-06-2022)
 - Changes in deploying the plugin. See documentation at https://github.com/kevinkarl22/jFullPageScroller
 - Minor fixes and improvements.
