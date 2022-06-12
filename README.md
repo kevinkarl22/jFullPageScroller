@@ -162,7 +162,7 @@ To add a callback, create an object using the following the format:
 
 `Note: Your 'TARGET SECTION ID' must match the value of the 'jfps-section-id' assigned on each section.`
 
-If your `TARGET SECTION ID` matches the value of a section's `jfps-section-id`, then it will initialize the callback of that specific section.
+If your `TARGET SECTION ID` matches the value of a section's `jfps-section-id`, then it will initialize the callback script of that specific section.
 
 You can utilize the jQuery's `animate()` options exception for `duration` in your callbacks. Visit [jQuery's Animate](https://api.jquery.com/animate/) for API documentation.
 
